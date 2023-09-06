@@ -18,4 +18,20 @@ public class Kalkulator {
             System.out.println("u can't divide by 0");
         }
     }
+
+    public void calculate(int a, int b, String c) {
+        if (c == "+") {
+            System.out.println("Calling addiction");
+            addiction(a, b);
+        }
+        if (c == "-") {
+            subtraction(a, b);
+        }
+        if (c == "*") {
+            multiplication(a, b);
+        }
+        if (c == "/") {
+            division(a, b);
+        }
+    }
 }
