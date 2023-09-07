@@ -1,20 +1,25 @@
 public class Kalkulator {
 
     public int calculate(int a, int b, String c) {
-        if (c.equals("+")) {
-            return addiction(a, b);
-        }
-        if (c.equals("-")) {
-            return subtraction(a, b);
-        }
-        if (c.equals("*")) {
-            return multiplication(a, b);
-        }
-        if (c.equals("/")) {
-            return division(a, b);
-        } 
+        switch (c){
+            case"+": {
+                return addiction(a, b);
+            }
+            case"-": {
+                return subtraction(a, b);
+            }
+            case"*": {
+                return multiplication(a, b);
+            }
+            case"/": {
+                return division(a, b);
+            }
+            default: {
+                System.out.println("Error");
+                return 0;
+            }
 
-        return 0;
+        }
     }
 
     public int addiction(int a, int b) {
