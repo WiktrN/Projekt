@@ -14,7 +14,7 @@ public class StringOutput {
         int d = test.lengthTest();
         System.out.println("4. lengthTest: " + d);
 
-        int e = test.charAtTest();
+        char e = test.charAtTest();
         System.out.println("5. charAtTest: " + e);
 
         String[] f = test.splitTest();
@@ -36,7 +36,7 @@ public class StringOutput {
         System.out.println("11. trimTest: " + "to jest tekst pierwszy, " + k);
 
         char[] l = test.toCharArrayTest();
-        System.out.println("12. toCharArrayTest: " + l);
+        System.out.println("12. toCharArrayTest: " + l[5]);
 
         String m = test.substringTest();
         System.out.println("13. substringTest: " + m);

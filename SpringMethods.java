@@ -23,8 +23,8 @@ public class SpringMethods {
         return test3;
     }
 
-    public char charAtTest() { // ???
-        char test = tekst.charAt(2);
+    public char charAtTest() {
+        char test = tekst.charAt(3);
         return test;
     }
 
@@ -34,7 +34,7 @@ public class SpringMethods {
     }
 
     public String replaceTest() {
-        String test = tekst.replace(tekst, tekst2);
+        String test = tekst.replace("jest", "dupa");
         return test;
     }
 
@@ -60,7 +60,7 @@ public class SpringMethods {
         return test;
     }
 
-    public char[] toCharArrayTest() { //???
+    public char[] toCharArrayTest() {
         char[] test = tekst.toCharArray();
         return test;
     }
@@ -80,8 +80,8 @@ public class SpringMethods {
         return test;
     }
 
-    public int indexOfTest() { // ???
-        int test = tekst.indexOf(tekst2);
+    public int indexOfTest() {
+        int test = tekst.indexOf("jest");
         return test;
     }
 
@@ -95,7 +95,7 @@ public class SpringMethods {
         return test;
     }
 
-    public int compareToTest() { // ???
+    public int compareToTest() {
         int test = tekst.compareTo(tekst2);
         return test;
     }
