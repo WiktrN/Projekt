@@ -27,6 +27,6 @@ public class Main {
             System.out.print("Do you want to continue Y/n ");
             x = reader.readLine();
 
-        } while (x.equals("y"));
+            } while (x.equals("y"));
+        }
     }
-}
