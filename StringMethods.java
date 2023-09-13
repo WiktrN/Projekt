@@ -1,4 +1,4 @@
-public class SpringMethods {
+public class StringMethods {
 
     String tekst = "to jest przykładowy test ";
     String tekst2 = "to jest drugi przykładowy test ";

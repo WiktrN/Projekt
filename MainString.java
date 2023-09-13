@@ -1,4 +1,4 @@
-public class StringOutput {
+public class MainString {
     public static void main(String[] args) {
         SpringMethods test = new SpringMethods();
 

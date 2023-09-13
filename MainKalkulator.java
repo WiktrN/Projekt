@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class MainKalkulator {
     public static void main(String[] args) throws IOException {
         String x;
         do {
@@ -27,6 +27,6 @@ public class Main {
             System.out.print("Do you want to continue Y/n ");
             x = reader.readLine();
 
-            } while (x.equals("y"));
-        }
+        } while (x.equals("y"));
     }
+}
