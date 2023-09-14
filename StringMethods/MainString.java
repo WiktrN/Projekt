@@ -1,6 +1,7 @@
+package StringMethods;
 public class MainString {
     public static void main(String[] args) {
-        SpringMethods test = new SpringMethods();
+        StringMethods test = new StringMethods();
 
         String a = test.toUpperCaseTest();
         System.out.println('\n' + "1. toUpperCaseTest: " + a);

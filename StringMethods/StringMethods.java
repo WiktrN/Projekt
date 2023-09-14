@@ -1,3 +1,4 @@
+package StringMethods;
 public class StringMethods {
 
     String tekst = "to jest przykładowy test ";

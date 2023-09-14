@@ -1,3 +1,5 @@
+package Kalkulator;
+
 public class Kalkulator {
 
     public int calculate(int a, int b, String c) {
