@@ -1,5 +1,14 @@
 package NamesV2;
+
 public class NamesV2 {
+    String id;
+
+    public NamesV2(String dupa) {
+        this.id = dupa;
+    }
+
+    public NamesV2() {
+    }
 
     public int shortnames(String[] names, int name_size) {
         int suma = 0;
