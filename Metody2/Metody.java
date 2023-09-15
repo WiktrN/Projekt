@@ -25,14 +25,16 @@ class Metody {
     }
 
     public String[] stringIntTable(String[] j, int stringLength) {
-        for (int z = 0; z < j.length; z++) {
-            if (j[z].length() <= stringLength) {
-                System.out.println("* " + j[z] + ", " + stringLength);
+        String[] strTable = j;
+
+        for (int z = 0; z < strTable.length; z++) {
+            if (strTable[z].length() <= stringLength) {
+                strTable[z] = strTable[z];
             } else {
-                System.out.println(j[z].substring(0, stringLength) + ", " + stringLength);
+                strTable[z] = strTable[z].substring(0, stringLength);
             }
         }
-        return j;
+        return strTable;
     }
 
     public String intStringTable(int[] k) {

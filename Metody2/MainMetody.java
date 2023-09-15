@@ -39,7 +39,13 @@ public class MainMetody {
         System.out.println("4. " + metodyOutput.stringTrueFalse(e, f));
         System.out.println("5. " + metodyOutput.stringTable(g, i));
         System.out.println("6. " + metodyOutput.intTable(h));
-        System.out.println("7. " + metodyOutput.stringIntTable(j, stringLength));
+
+        String[] strTablee = metodyOutput.stringIntTable(j, stringLength);
+
+        for (String strInt : strTablee) {
+            System.out.println("7. " + strInt);
+        }
+
         System.out.println("8. " + metodyOutput.intStringTable(k));
     }
 }
