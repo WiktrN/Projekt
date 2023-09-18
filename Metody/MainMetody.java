@@ -1,3 +1,4 @@
+package Metody;
 public class MainMetody {
 
     public static void main(String args[]) {
