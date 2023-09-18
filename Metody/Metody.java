@@ -1,4 +1,4 @@
-package Metody2;
+package Metody;
 class Metody {
     public String stringName(String a) {
         return "Siemano " + a;
@@ -16,12 +16,22 @@ class Metody {
         return (e.length() == f);
     }
 
-    public int stringTable(String[] g, int i) {
-        return g[i].length();
+    public int[] stringTable(String[] g) { // abc
+        int[] dlugoscStringa = new int[g.length];
+
+        for (int i = 0; i < g.length; i++) {
+            dlugoscStringa[i] = g[i].length();
+        }
+        return dlugoscStringa;
     }
 
-    public int intTable(int[] h) {
-        return h[0] + h[1];
+    public int intTable(int[] numbers) {
+        int suma = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            suma += numbers[i];
+        }
+        return suma;
     }
 
     public String[] stringIntTable(String[] j, int stringLength) {

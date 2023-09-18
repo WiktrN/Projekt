@@ -1,4 +1,3 @@
-package Metody2;
 public class MainMetody {
 
     public static void main(String args[]) {
@@ -18,11 +17,10 @@ public class MainMetody {
         int f = 8;
 
         // stringTable
-        String[] g = { "Name1127512", "Name234", "Name33444781872578879" };
-        int i = 1;
+        String[] g = { "Name1127512","", "Name234", "Name33444781872578879", "buifbhidfiubfabiufbiuiuafuibuifbuiasbiufsaubi" };
 
         // intTable
-        int[] h = { 2763, 2237 };
+        int[] numbers = { 2555, 2445, 2555, 2445 };
 
         // stringIntTable
         String[] j = { "Czerwony", "Zolty", "Bialy", "Czarny", "Niebieski" };
@@ -37,8 +35,14 @@ public class MainMetody {
         System.out.println("2. " + metodyOutput.stringLength(b));
         System.out.println("3. " + metodyOutput.stringInt(c, d));
         System.out.println("4. " + metodyOutput.stringTrueFalse(e, f));
-        System.out.println("5. " + metodyOutput.stringTable(g, i));
-        System.out.println("6. " + metodyOutput.intTable(h));
+
+        int[] Table = metodyOutput.stringTable(g);
+
+        for (int dlugoscTable : Table) {
+            System.out.println(dlugoscTable);
+        }
+
+        System.out.println("6. " + metodyOutput.intTable(numbers));
 
         String[] strTablee = metodyOutput.stringIntTable(j, stringLength);
 
