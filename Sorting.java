@@ -1,4 +1,4 @@
-public class Main {
+public class Sorting {
     public static void main(String[] args) {
 
         int[] tab = new int[] { 20, 15, 10, 30, 35, 25, 40 };
