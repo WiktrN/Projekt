@@ -1,6 +1,6 @@
 package CheckDuplicated;
 
-public class Main {
+public class checkMain {
     public static void main(String[] args) {
 
         int[] tab = { 2, 2, 2, 2, 2, 2 };
