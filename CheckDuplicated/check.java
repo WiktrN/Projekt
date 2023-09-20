@@ -1,3 +1,5 @@
+package CheckDuplicated;
+
 public class check {
     public static int duplicates(int[] tab) {
 
@@ -7,9 +9,9 @@ public class check {
 
         for (int i = 0; i < tab.length; i++) {
 
-            boolean isDupicated = secondCode(nTab, tab[i]);
+            boolean isDuplicated = secondCode(nTab, tab[i]);
 
-            if (!isDupicated) {
+            if (!isDuplicated) {
                 nTab[i] = tab[i];
             } else {
                 System.out.println(tab[i]);
