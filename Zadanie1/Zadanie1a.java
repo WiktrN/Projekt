@@ -1,3 +1,4 @@
+package Zadanie1;
 public class Zadanie1a {
     public int lowHigh(int[] tab) {
 
