@@ -31,7 +31,7 @@ public class Url {
 
     public String ip2(String ipk) {
 
-        String re = "(\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})";
+        String re = "^(\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})$";
 
         Pattern pt = Pattern.compile(re);
         Matcher mt = pt.matcher(ipk);

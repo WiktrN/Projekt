@@ -12,7 +12,7 @@ public class Main {
 
         // ip
 
-        String ipk = "ghgfhggf 192.168.0.1";
+        String ipk = "192.168.0.1";
 
         // String wynik2 = name.ip(ipk);
 
