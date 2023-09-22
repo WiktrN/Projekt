@@ -1,4 +1,5 @@
-public class Main {
+package Url;
+public class UrlMain {
     public static void main(String[] args) {
 
         Url name = new Url();
