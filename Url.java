@@ -16,16 +16,35 @@ public class Url {
 
     // }
 
-    public String ip(String ipk) {
+    // public String ip(String ipk) {
 
-        String re = "(\\d{1,3})([.]\\d{1,3})([.]\\d{1,3})([.]\\d{1,3})";
+    //     String re = "(\\d{1,3})([.]\\d{1,3})([.]\\d{1,3})([.]\\d{1,3})";
+
+    //     Pattern pt = Pattern.compile(re);
+    //     Matcher mt = pt.matcher(ipk);
+
+    //     boolean result = mt.matches();
+    //     System.out.println(result);
+
+    //     return ipk;
+    // }
+
+    public String ip2(String ipk) {
+
+        String re = "(\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})[.](\\d{1,3})";
 
         Pattern pt = Pattern.compile(re);
         Matcher mt = pt.matcher(ipk);
 
-        boolean result2 = mt.matches();
-        System.out.println(result2);
+        boolean result = mt.matches();
+        System.out.println(result);
 
+        System.out.println(mt.group(0));
+        System.out.println(mt.group(1));
+        System.out.println(mt.group(2));
+        System.out.println(mt.group(3));
+        System.out.println(mt.group(4));
+        
         return ipk;
     }
 

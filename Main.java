@@ -12,11 +12,17 @@ public class Main {
 
         // ip
 
-        String ipk = "192.168.0.1";
+        String ipk = "ghgfhggf 192.168.0.1";
 
-        String wynik2 = name.ip(ipk);
+        // String wynik2 = name.ip(ipk);
 
-        System.out.println(wynik2);
+        // System.out.println(wynik2);
+
+        // ip2
+
+        String wynik3 = name.ip2(ipk);
+
+        System.out.println(wynik3);
 
     }
 
