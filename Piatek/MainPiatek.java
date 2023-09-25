@@ -14,10 +14,10 @@ public class MainPiatek {
 
         System.out.println(wynik1);
 
-        // Contains two **
+        // Contains two
 
-        String example2 = "tereferre";
-        CharSequence c2 = "r";
+        String example2 = "arrarrarrarr";
+        char c2 = 'r';
 
         boolean wynik2 = name.containsTwo(example2, c2);
 
@@ -32,9 +32,11 @@ public class MainPiatek {
 
         System.out.println(wynik3);
 
-        // divide table **
+        // divide table
 
         int[] balance = { 1, 1, 1, 2, 1 };
+        // int[] balance = { 2, 1, 1, 2, 1};
+        // int[] balance = { 10, 10};
 
         boolean wynik4 = name.divideTable(balance);
 

@@ -14,17 +14,19 @@ public class Piatek {
         return suma;
     }
 
-    public boolean containsTwo(String example2, CharSequence c2) {
+    public boolean containsTwo(String example2, char c2) {
 
-        String check = c2.toString() + c2.toString();
+        boolean check = false;
 
-        for (int i = 0; i < example2.length(); i++) {
-            if (example2.contains(check)) {
-                return true;
+        for (int i = 0; i < example2.length() - 1; i++) {
+            if (example2.charAt(i) == c2 && example2.charAt(i + 1) != c2) {
+                check = false;
+            }
+            if (example2.charAt(i) == c2 && c2 == example2.charAt(i + 1)) {
+                check = true;
             }
         }
-
-        return false;
+        return check;
     }
 
     public String twoStrings(String example3, String example4) {
@@ -38,10 +40,24 @@ public class Piatek {
 
         int suma = 0;
 
-        for (int i = 0; i < balance.length; i++) {
-            suma += balance[i];
-            if (suma % 2 == 0) {
+        for (int num : balance) {
+            suma += num;
+        }
+
+        if (suma % 2 != 0) {
+            return false;
+        }
+
+        int targetSum = suma / 2;
+        int currentSum = 0;
+
+        for (int num : balance) {
+            currentSum += num;
+            if (currentSum == targetSum) {
                 return true;
+            }
+            if (currentSum > targetSum) {
+                return false;
             }
         }
 
