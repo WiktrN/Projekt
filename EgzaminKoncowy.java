@@ -7,8 +7,6 @@ public class EgzaminKoncowy {
         // ------------------------------------------------------------------------------
 
         String xyzThere = "abcxyz";
-        // String xyzThere = "abc.xyz";
-        // String xyzThere = "xyz.abc";
 
         boolean wynik1 = em.xyz(xyzThere);
 
@@ -25,6 +23,7 @@ public class EgzaminKoncowy {
         System.out.println(wynik2);
 
         // 3 zip zap
+        // ------------------------------------------------------------------------------
 
         String zipZap = "zipXzap";
 
@@ -48,7 +47,7 @@ public class EgzaminKoncowy {
 
         int a2 = 4;
         int b2 = 1;
-        int c2 = 7;
+        int c2 = 9;
 
         int wynik5 = em.makeChocolate(a2, b2, c2);
 
@@ -69,8 +68,6 @@ public class EgzaminKoncowy {
         // ------------------------------------------------------------------------------
 
         String text = "abXYZba";
-        // String text = "abca";
-        // String text = "aba";
 
         String wynik7 = em.mirrorEnds(text);
 
@@ -83,7 +80,11 @@ public class EgzaminKoncowy {
 
         int[] wynik8 = em.fix34(nums);
 
-        System.out.println(wynik8);
+        System.out.println("///");
+        for (int cztery : wynik8) {
+            System.out.println(cztery);
+        }
+        System.out.println("///");
 
         // 9 countClups
         // ------------------------------------------------------------------------------

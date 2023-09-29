@@ -40,8 +40,6 @@ public class EgzaminMetods {
 
         wartosc1 = a1 - b1;
         wartosc2 = b1 - c1;
-        wartosc1++;
-        ++wartosc1;
 
         if (wartosc1 == wartosc2) {
             return true;
@@ -119,9 +117,28 @@ public class EgzaminMetods {
     }
 
     public int[] fix34(int[] nums) {
-    
-        return fix34(nums);
-        
+
+        int i = 0;
+        int j;
+
+        while (i < nums.length && nums[i] != 3) {
+            i++;
+        }
+
+        j = i + 1;
+
+        while (i < nums.length) {
+            if (nums[i] == 3) {
+                while (nums[j] != 4) {
+                    j++;
+                }
+                int temp = nums[i + 1];
+                nums[i + 1] = nums[j];
+                nums[j] = temp;
+            }
+            i++;
+        }
+        return nums;
     }
 
     public int countClumps(int[] clump) {
